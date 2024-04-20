@@ -1,0 +1,11 @@
+.project {
+    padding: 20px;
+    background-color: rgba(230, 225, 225, 0.295);;
+}
+
+.project-layout {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+

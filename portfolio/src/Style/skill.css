@@ -1,0 +1,9 @@
+.skills {
+    padding: 20px;
+    background-color: rgba(204, 204, 204, 0.448);;
+}
+
+.skill-layout {
+   display: flex;
+   flex-wrap: wrap;
+}

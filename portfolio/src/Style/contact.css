@@ -1,0 +1,115 @@
+.Contact {
+    margin: 20px;
+    height: auto;
+}
+.head{
+    font-size: 45px;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts .right,
+.contacts .left {
+    width: 48%;
+}
+
+@media only screen and (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts .right,
+    .contacts .left {
+        width: 100%;
+    }
+}
+
+/* Basic styles for inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #0988e3;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"]{
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.text{
+    font-size: 58px;
+    font-weight: 900;
+}
+.text2{
+    font-size: 20px;
+}
+
+.msg{
+    margin: 50px;
+}
+
+.contact-details {
+    display: flex;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.mail,
+.phone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-details {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .text{
+        font-size: 28px; 
+    }
+    .msg{
+        margin: 0px;
+    }
+}
+
+
+.left-title{
+    font-size: 25px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+
+
+
