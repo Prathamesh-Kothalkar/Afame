@@ -1,0 +1,29 @@
+
+
+.footer {
+    background-color: #767c81;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+}
+
+.footer-item{
+    display: block;
+    
+}
+
+
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .footer {
+        
+    }
+
+   
+
+    .logo {
+        text-align: center;
+    }
+}

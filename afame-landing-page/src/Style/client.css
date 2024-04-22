@@ -1,0 +1,14 @@
+.clients{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: rgba(223, 201, 201, 0.838);
+}
+
+@media screen and (max-width: 768px) {
+    .clients{
+        width:100%;
+       margin-right: 20px;
+    } 
+}
