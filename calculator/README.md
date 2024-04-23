@@ -1,8 +1,11 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Landing Page
 
-Currently, two official plugins are available:
+In this Repo I Developed Calculator which has been calculate each an every Expression and also show the expection like when any Number divided by Zero == infinity or Number can't divide by zero.
+In this project user allow to clear all screen and clear a single digit
+For desinging UI I use tailwaindCss  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Here is the output both for Mobile and Desktop 
+
+
+
