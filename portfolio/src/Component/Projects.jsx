@@ -24,7 +24,7 @@ export default function Project(){
                   }
                     
                 </div>
-                <button style={{margin:"15px"}}>See More on GitHub</button>
+                <button onClick={()=>{window.location.href="https://github.com/prathamesh-kothalkar"}} style={{margin:"15px"}}>See More on GitHub</button>
             </div>
         </>
     )
