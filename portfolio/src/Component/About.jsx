@@ -1,8 +1,9 @@
 import "../Style/about.css"
 import { TypeAnimation } from 'react-type-animation';
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons';
+import resume from '../assets/prathResume.pdf'
 export default function About() {
-
+    const res=resume;
     return (
         <>
             About me
@@ -38,7 +39,7 @@ export default function About() {
                             <SocialIcon  style={{margin:"6px"}} url="https://instagram.com/kothalkar_prathamesh_07" />
                         </div>
                         <div className="cv">
-                            <a className="btn" href="https://drive.google.com/file/d/1Gp-h5Htmk3EKQzRFWoM8DeYhk7HaN0TL/view?usp=drive_link" download>Get a Resume</a>
+                            <a className="btn" href={res} download>Get a Resume</a>
                         </div>
                     </div>
 

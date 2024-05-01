@@ -14,7 +14,7 @@ export const project=[
         img_src:"https://i.ibb.co/Z6T4N8V/paytm.gif",
         name:"Basic Paytm App",
         desc:"Developed a full stack app Where user can send and recive money. While developing project understand the ' Session in MongoDb' ,Sessions enable causal consistency for a group of operations or allow you to execute operations in an ACID transaction. ",
-        tech:"MongoDb, Express.js, React.js, Node.js, TailwindCss ",
+        tech:"MongoDb, Express.js, React.js, Node.js, TailwindCss  ",
         github:"https://github.com/Prathamesh-Kothalkar/paytm-app",
         deploy:null
     },
