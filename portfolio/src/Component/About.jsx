@@ -39,7 +39,7 @@ export default function About() {
                             <SocialIcon  style={{margin:"6px"}} url="https://instagram.com/kothalkar_prathamesh_07" />
                         </div>
                         <div className="cv">
-                            <a className="btn" href={res} download>Get a Resume</a>
+                            <a className="btn" href={res} download={"Prathamesh's Resume"}>Get a Resume</a>
                         </div>
                     </div>
 
