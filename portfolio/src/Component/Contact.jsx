@@ -16,7 +16,7 @@ export default function Contact() {
                                 <img src="https://t3.ftcdn.net/jpg/04/40/47/24/360_F_440472452_akYtD3QipsLo9IwGEintusNRPO09rAFH.jpg"
                                     width={"50px"} height={"50px"} alt="" />
                                 <div className="body">
-                                    <a href="mailto:pkothalkar9021@gmail.com">prathameshkothalkar9021@gmail.com</a>
+                                    <a href="mailto:pkothalkar9021@gmail.com">pkothalkar9021@gmail.com</a>
                                 </div>
                             </div>
                             <div className="phone">
