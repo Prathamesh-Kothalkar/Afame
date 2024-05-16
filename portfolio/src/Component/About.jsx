@@ -36,7 +36,7 @@ export default function About() {
                         <div>
                             <SocialIcon style={{margin:"6px"}} url="https://www.linkedin.com/in/prathamesh-kothalkar-0b0949243/" />
                             <SocialIcon  style={{margin:"6px"}} url="https://github.com/prathamesh-kothalkar" />
-                            <SocialIcon  style={{margin:"6px"}} url="https://instagram.com/kothalkar_prathamesh_07" />
+                            <SocialIcon  style={{margin:"6px"}} url="https://instagram.com/dev.prathamesh_" />
                         </div>
                         <div className="cv">
                             <a className="btn" href={res} download={"Prathamesh's Resume"}>Get a Resume</a>
