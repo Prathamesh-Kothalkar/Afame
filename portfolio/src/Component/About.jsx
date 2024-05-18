@@ -6,7 +6,6 @@ export default function About() {
     const res=resume;
     return (
         <>
-            About me
             <div className="about" id="About" >
                 <div className="photo">
                     <img src="https://i.ibb.co/QksNKnW/prathamesh.jpg" alt="" />
