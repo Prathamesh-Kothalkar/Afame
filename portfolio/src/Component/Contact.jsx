@@ -1,5 +1,27 @@
 import "../Style/contact.css"
+import HCaptcha from '@hcaptcha/react-hcaptcha';
+import { useState } from "react";
 export default function Contact() {
+
+    const [result, setResult] = useState("");
+    const onHCaptchaChange = (token) => {
+        setValue("h-captcha-response", token);
+    };
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "f0252f5f-c09d-431e-a3ec-d1f7181de97f");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        setResult("Sended")
+    }
     return (
         <>
             <div className="Contact" id="Contact">
@@ -30,21 +52,19 @@ export default function Contact() {
                     </div>
                     <div className="left">
                         <div className="left-title">Send me a message 🚀</div>
-                        <from action="https://api.web3forms.com/submit"  method="POST">
-                        <input type="hidden" name="access_key" value="f0252f5f-c09d-431e-a3ec-d1f7181de97f"></input>
-                            <input type="text" name="name" placeholder="Enter Name" />
-                            <br />
-                            <input type="email" name="email" placeholder="Email Address" />
-                            <br />
-                            <input type="text" name="subject" placeholder="Subject" />
-                            <br />
-                            <textarea name="query" type="textarea" placeholder="Tell me about your Project" />
-                            <br />
-                           
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success?title=My%20Text&desc=Custom%20Description" />
-                            <div class="h-captcha" data-captcha="true"></div>
-                            <button type="submit" value={"Submit"}>Submit</button>
-                        </from>
+                        <form onSubmit={onSubmit}>
+                            <input type="text" name="name" placeholder="Enter Name" required />
+                            <input type="email" placeholder="Email Address" name="email" required />
+                            <input type="text" name="subject" placeholder="Subject" required />
+                            <textarea name="message" placeholder="Tell me about your Project" required></textarea>
+                            <HCaptcha
+                                sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                                reCaptchaCompat={false}
+                                onVerify={onHCaptchaChange} />
+                            <button type="submit">Submit Form</button>
+
+                        </form>
+                        <span>{result}</span>
                     </div>
                 </div>
             </div>
