@@ -7,6 +7,7 @@ import Project from './Component/Projects'
 import Contact from './Component/Contact'
 import Footer from './Component/Footer'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
  
@@ -20,7 +21,7 @@ function App() {
       <Project/>
       <Contact/>
       <Footer/>
-     
+     <Analytics/>
      
     </>
   )

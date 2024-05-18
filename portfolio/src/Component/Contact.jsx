@@ -20,7 +20,9 @@ export default function Contact() {
             body: formData
         });
 
-        setResult("Sended")
+        setResult("Sended");
+        
+       
     }
     return (
         <>
@@ -60,7 +62,7 @@ export default function Contact() {
                             <HCaptcha
                                 sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
                                 reCaptchaCompat={false}
-                                onVerify={onHCaptchaChange} />
+                                onVerify={onHCaptchaChange}  />
                             <button type="submit">Submit Form</button>
 
                         </form>
